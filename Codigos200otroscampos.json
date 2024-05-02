@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "92835418-780c-462f-8f83-fa0cea9ffb12",
-		"name": "Codigos 200",
+		"_postman_id": "d11a2235-410f-4eb9-b966-175010f36409",
+		"name": "Codigos 200 Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "29460625",
-		"_collection_link": "https://red-satellite-829132.postman.co/workspace/TRANSFIYA-TIME~e6fb1c04-db29-4b23-bf0b-3e5042f97027/collection/29460625-92835418-780c-462f-8f83-fa0cea9ffb12?action=share&source=collection_link&creator=29460625"
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/TRANSFIYA-TIME~e6fb1c04-db29-4b23-bf0b-3e5042f97027/collection/29460625-d11a2235-410f-4eb9-b966-175010f36409?action=share&source=collection_link&creator=29460625"
 	},
 	"item": [
 		{
-			"name": "Transfer Management Dispersion Copy",
+			"name": "Transfer Management Codigos 200",
 			"event": [
 				{
 					"listen": "test",
