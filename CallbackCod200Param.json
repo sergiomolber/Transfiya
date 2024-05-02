@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "0f78d0a5-444a-4b41-b371-c0e25a6417d1",
+		"name": "Transfiya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31315694",
+		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/TRANSFIYA~a1429b6e-9f36-49cc-b10a-6933c9252c77/collection/31315694-0f78d0a5-444a-4b41-b371-c0e25a6417d1?action=share&source=collection_link&creator=31315694"
+	},
+	"item": [
+		{
+			"name": "CALLBACK QA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Obtiene el código de estado de la respuesta\r",
+							"const statusCode = pm.response.code;\r",
+							" \r",
+							"// Verifica que el código de estado sea 200 o 400\r",
+							"pm.test(\"Código de estado es 200 o 400\", function() {\r",
+							"    pm.expect(statusCode).to.be.oneOf([200, 400]);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client-id",
+						"value": "65274d8ea32d7c1c3410a6b2792c277f",
+						"type": "text"
+					},
+					{
+						"key": "client-secret",
+						"value": "cbd2e69a83aa33abe80684a49260315a",
+						"type": "text"
+					},
+					{
+						"key": "message-uid",
+						"value": "{{message-uid}}",
+						"type": "text"
+					},
+					{
+						"key": "api-key",
+						"value": "757ff2d4-d02e-4395-9941-a962ab162e27",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transferId\":\"dbc977ef-1e72-41cd-ae87-fc8714be383b\",\r\n    \"tx_id\": \"XzwutTb9BlZbefE2N\",\r\n    \"status\": \"COMPLETED\",\r\n    \"type\": \"REQUEST\",\r\n    \"created\": \"2023-11-09T11:56:10-05:00\",\r\n    \"updated\": \"2023-11-09T11:56:23-05:00\",\r\n    \"amount\": \"116400.00\",\r\n    \"symbol\": \"$tin\"\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://business.transfiya.com.co/ext/prb/ext/transfiya/v1/transfers/zPSaK3TzhqfPMitnm/callback",
+					"protocol": "https",
+					"host": [
+						"business",
+						"transfiya",
+						"com",
+						"co"
+					],
+					"path": [
+						"ext",
+						"prb",
+						"ext",
+						"transfiya",
+						"v1",
+						"transfers",
+						"zPSaK3TzhqfPMitnm",
+						"callback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
