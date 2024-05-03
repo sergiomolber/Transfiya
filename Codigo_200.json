@@ -14,19 +14,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"// Obtiene la respuesta JSON\r",
-							"const responseJson = pm.response.json();\r",
-							"const transferId = responseJson.transfersInfo[0].transferId;\r",
-							"pm.environment.set(\"transferId\", transferId);\r",
-							"\r",
-							"// Obtiene la respuesta JSON\r",
-							"const responseJson1 = pm.response.json();\r",
-							"const txRef = responseJson1.transfersInfo[0].txRef;\r",
-							"pm.environment.set(\"txRef\", txRef);\r",
-							"\r",
-							"//obtenre tiempo de respuesta\r",
-							"pm.test('El tiempo de respuesta es menor a 3000ms', function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							""
 						],
@@ -433,19 +422,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"// Obtiene la respuesta JSON\r",
-							"const responseJson = pm.response.json();\r",
-							"const transferId = responseJson.transfersInfo[0].transferId;\r",
-							"pm.environment.set(\"transferId\", transferId);\r",
-							"\r",
-							"// Obtiene la respuesta JSON\r",
-							"const responseJson1 = pm.response.json();\r",
-							"const txRef = responseJson1.transfersInfo[0].txRef;\r",
-							"pm.environment.set(\"txRef\", txRef);\r",
-							"\r",
-							"//obtenre tiempo de respuesta\r",
-							"pm.test('El tiempo de respuesta es menor a 3000ms', function(){\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							""
 						],
